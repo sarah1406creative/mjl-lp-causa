@@ -13,7 +13,7 @@ import PrivacyModal from './components/PrivacyModal';
 
 const App: React.FC = () => {
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
-  
+
   // Logic to trigger animations on scroll
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -32,6 +32,48 @@ const App: React.FC = () => {
 
     return () => {
       revealElements.forEach((el) => observer.unobserve(el));
+    };
+  }, []);
+
+  // Typebot Lazy Load
+  useEffect(() => {
+    const loadTypebot = async () => {
+      const Typebot = await import('https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js' as any);
+
+      Typebot.default.initBubble({
+        typebot: "mjl-causasimobiliarias",
+        apiHost: "https://flow.creativelane.com.br",
+        theme: {
+          button: {
+            backgroundColor: "#21c063",
+            customIconSrc: "https://atendimento.causaimobiliaria.com.br/wp-content/uploads/2025/10/bubble-icon-copy-2.png",
+            size: "large",
+          },
+          chatWindow: { backgroundColor: "#FAF9F6" },
+        },
+      });
+
+      (window as any).Typebot = Typebot.default;
+    };
+
+    const handleInteraction = () => {
+      loadTypebot();
+      window.removeEventListener('scroll', handleInteraction);
+      window.removeEventListener('click', handleInteraction);
+      window.removeEventListener('touchstart', handleInteraction);
+    };
+
+    window.addEventListener('scroll', handleInteraction, { passive: true, once: true });
+    window.addEventListener('click', handleInteraction, { passive: true, once: true });
+    window.addEventListener('touchstart', handleInteraction, { passive: true, once: true });
+
+    // Also load if user clicks a specific button (handled via global window object or event delegation if needed, 
+    // but here we just ensure it loads on any interaction which covers the button click too)
+
+    return () => {
+      window.removeEventListener('scroll', handleInteraction);
+      window.removeEventListener('click', handleInteraction);
+      window.removeEventListener('touchstart', handleInteraction);
     };
   }, []);
 
