@@ -41,7 +41,7 @@ const App: React.FC = () => {
       const Typebot = await import('https://cdn.jsdelivr.net/npm/@typebot.io/js@0.3/dist/web.js' as any);
 
       Typebot.default.initBubble({
-        typebot: "mjl-causasimobiliarias",
+        typebot: "mjl-familia",
         apiHost: "https://flow.creativelane.com.br",
         theme: {
           button: {

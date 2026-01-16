@@ -3,11 +3,11 @@ import Button from './Button';
 import { GOOGLE_MAPS_LINK } from '../constants';
 
 const HERO_TAGS = [
-  "DIREITO IMOBILIÁRIO",
-  "CAUSAS IMOBILIÁRIAS",
-  "DISTRATO DE IMÓVEL",
-  "ATRASO DE OBRA",
-  "VÍCIOS CONSTRUTIVOS"
+  "INVENTÁRIO E PARTILHA",
+  "DIVÓRCIO E SEPARAÇÃO",
+  "PENSÃO E GUARDA",
+  "PLANEJAMENTO SUCESSÓRIO",
+  "PROTEÇÃO PATRIMONIAL"
 ];
 
 const Hero: React.FC = () => {
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
         >
           <img
             src="/assets/hero-bg.webp"
-            alt="Construção Civil e Imóveis"
+            alt="Justiça e Proteção Familiar"
             fetchPriority="high"
             onLoad={() => setImgLoaded(true)}
             className={`w-full h-full object-cover transition-all duration-1000 ease-out-expo ${imgLoaded ? 'opacity-40 blur-0 scale-100' : 'opacity-0 blur-lg scale-105'
@@ -92,8 +92,8 @@ const Hero: React.FC = () => {
                 <span
                   key={i}
                   className={`absolute top-0 left-0 text-[10px] sm:text-xs md:text-sm font-bold tracking-[0.2em] text-mjl-gold uppercase transition-all duration-700 ease-out-expo whitespace-nowrap ${i === currentTag
-                      ? 'opacity-100 translate-y-0 filter blur-0'
-                      : 'opacity-0 translate-y-4 filter blur-sm'
+                    ? 'opacity-100 translate-y-0 filter blur-0'
+                    : 'opacity-0 translate-y-4 filter blur-sm'
                     }`}
                 >
                   {tag}
@@ -103,29 +103,24 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="text-3xl xs:text-4xl sm:text-6xl lg:text-7xl font-heading font-bold text-white leading-[1.1] tracking-tight drop-shadow-xl reveal delay-100">
-            Problemas com seu <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-mjl-gold via-mjl-goldLight to-mjl-gold animate-shine bg-[length:200%_auto]">
-              Imóvel na Planta?
-            </span>
+          <h1 className="text-4xl sm:text-6xl md:text-7xl font-heading font-bold text-white leading-[1.1] md:leading-[1.1] tracking-tight reveal delay-300">
+            Proteção para o seu <br />
+            <span className="text-mjl-gold">Patrimônio Familiar</span>.
           </h1>
-
-          {/* Subheadline */}
-          <p className="text-stone-300 text-sm xs:text-base sm:text-lg md:text-xl leading-relaxed font-light max-w-xl border-l-2 border-mjl-gold pl-4 md:pl-6 reveal delay-200">
-            Atraso na entrega, juros abusivos, vícios construtivos ou distrato.
-            Lutamos para recuperar o seu dinheiro e seus direitos contra construtoras.
+          <p className="text-base sm:text-lg md:text-xl text-stone-400 font-light leading-relaxed max-w-2xl reveal delay-400">
+            Especialistas em <strong className="text-white font-medium">Inventário e Direito de Família</strong>. Soluções ágeis e seguras para garantir a tranquilidade da sua sucessão patrimonial.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-4 md:pt-6 reveal delay-300">
             <a href="#" onClick={handleContact} className="w-full sm:w-auto focus:outline-none">
               <Button fullWidth className="shadow-[0_0_30px_-5px_rgba(150,114,65,0.3)] hover:shadow-[0_0_30px_-5px_rgba(150,114,65,0.5)]">
-                Analisar meu Contrato
+                Falar com Especialista
               </Button>
             </a>
-            <a href="#" onClick={handleContact} className="w-full sm:w-auto focus:outline-none">
+            <a href="#servicos" className="w-full sm:w-auto focus:outline-none">
               <Button variant="outline-light" fullWidth>
-                Ver meus Direitos
+                Conhecer Áreas
               </Button>
             </a>
           </div>
@@ -136,7 +131,7 @@ const Hero: React.FC = () => {
               <div className="flex gap-0.5">
                 {[1, 2, 3, 4, 5].map(i => <svg key={i} className="w-3 h-3 md:w-4 md:h-4 text-yellow-400 fill-current" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>)}
               </div>
-              <span className="text-white font-bold text-[10px] md:text-xs">Especialistas em Imóveis</span>
+              <span className="text-white font-bold text-[10px] md:text-xs">Advocacia de Família e Civil</span>
             </a>
           </div>
 
@@ -144,12 +139,12 @@ const Hero: React.FC = () => {
           <div className="flex items-center gap-6 md:gap-8 border-t border-white/5 mt-6 md:mt-8 pt-6 md:pt-8 reveal delay-500">
             <div className="group cursor-default">
               <span className="block text-xl md:text-2xl font-bold text-white font-heading group-hover:text-mjl-gold transition-colors duration-500 ease-out-expo">100%</span>
-              <span className="text-[9px] md:text-[10px] text-stone-400 uppercase tracking-wider">Foco Imobiliário</span>
+              <span className="text-[9px] md:text-[10px] text-stone-400 uppercase tracking-wider">Foco na Solução</span>
             </div>
             <div className="h-8 w-px bg-white/10"></div>
             <div className="group cursor-default">
-              <span className="block text-xl md:text-2xl font-bold text-white font-heading group-hover:text-mjl-gold transition-colors duration-500 ease-out-expo">48h</span>
-              <span className="text-[9px] md:text-[10px] text-stone-400 uppercase tracking-wider">Análise do Caso</span>
+              <span className="block text-xl md:text-2xl font-bold text-white font-heading group-hover:text-mjl-gold transition-colors duration-500 ease-out-expo">Humanizado</span>
+              <span className="text-[9px] md:text-[10px] text-stone-400 uppercase tracking-wider">Atendimento</span>
             </div>
           </div>
         </div>

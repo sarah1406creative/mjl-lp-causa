@@ -21,12 +21,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header 
-      className={`fixed w-full z-50 transition-all duration-700 ease-out-expo ${
-        scrolled 
-          ? 'bg-[#0a0605]/90 backdrop-blur-md py-3 shadow-2xl border-b border-white/5' 
-          : 'bg-transparent py-4 md:py-6'
-      }`}
+    <header
+      className={`fixed w-full z-50 transition-all duration-700 ease-out-expo ${scrolled
+        ? 'bg-[#0a0605]/90 backdrop-blur-md py-3 shadow-2xl border-b border-white/5'
+        : 'bg-transparent py-4 md:py-6'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -34,21 +33,21 @@ const Header: React.FC = () => {
           <div className="flex-shrink-0 relative z-50">
             <a href="#" className="flex items-center gap-2 md:gap-3 group focus:outline-none">
               {IMAGES.LOGO ? (
-                 <img 
-                   src={IMAGES.LOGO} 
-                   alt="MJL Advocacia" 
-                   width="150" 
-                   height="40"
-                   fetchPriority="high"
-                   className="h-6 xs:h-7 md:h-10 w-auto object-contain transition-transform duration-500 ease-out-expo group-hover:scale-105" 
-                 />
+                <img
+                  src={IMAGES.LOGO}
+                  alt="MJL Advocacia"
+                  width="150"
+                  height="40"
+                  fetchPriority="high"
+                  className="h-6 xs:h-7 md:h-10 w-auto object-contain transition-transform duration-500 ease-out-expo group-hover:scale-105"
+                />
               ) : (
                 <>
                   <div className="w-8 h-8 lg:w-10 lg:h-10 border border-mjl-gold flex items-center justify-center rounded-sm bg-mjl-gold/10 group-hover:bg-mjl-gold transition-colors duration-500 ease-out-expo">
                     <span className="font-heading text-base lg:text-xl text-mjl-gold font-bold group-hover:text-mjl-dark transition-colors">M</span>
                   </div>
                   <div className="flex flex-col">
-                    <span className="font-heading text-lg lg:text-2xl text-white leading-none tracking-tight font-bold group-hover:text-mjl-gold transition-colors duration-500">MJL</span>
+                    <span className="font-heading text-lg lg:text-2xl text-white leading-none tracking-tight font-bold group-hover:text-mjl-gold transition-colors duration-500">MJL Advocacia</span>
                   </div>
                 </>
               )}

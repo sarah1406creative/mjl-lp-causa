@@ -12,16 +12,16 @@ const Differentials: React.FC = () => {
 
   return (
     <section id="diferenciais" className="py-16 sm:py-24 bg-mjl-light relative overflow-hidden">
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-24 items-start">
-          
+
           <div className="lg:col-span-1 space-y-6 sm:space-y-8 reveal">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-mjl-dark leading-tight">
               Por que contratar a <span className="text-mjl-gold">MJL</span>?
             </h2>
             <p className="text-mjl-gray text-base sm:text-lg leading-relaxed font-light">
-              Processar construtoras exige técnica. Não deixe seu patrimônio na mão de generalistas. Atuamos com precisão para recuperar seus valores.
+              Questões sucessórias exigem precisão técnica. Não deixe o patrimônio da sua família na mão de generalistas. Atuamos com estratégia para garantir seus direitos.
             </p>
             <a href="#" onClick={handleContact} className="inline-block w-full sm:w-auto">
               <Button variant="primary" fullWidth className="shadow-lg">Analisar meu Caso</Button>
@@ -63,7 +63,7 @@ const DifferentialCard: React.FC<{ diff: any, index: number }> = ({ diff, index 
   };
 
   return (
-    <div 
+    <div
       ref={divRef}
       onMouseMove={handleMouseMove}
       onMouseEnter={handleMouseEnter}
@@ -71,8 +71,8 @@ const DifferentialCard: React.FC<{ diff: any, index: number }> = ({ diff, index 
       className="relative bg-white p-6 sm:p-8 rounded-sm shadow-card border-l-4 border-mjl-gold hover:-translate-y-2 transition-all duration-500 ease-out-expo group reveal overflow-hidden"
       style={{ transitionDelay: `${index * 150}ms` }}
     >
-       {/* Spotlight Effect */}
-      <div 
+      {/* Spotlight Effect */}
+      <div
         className="pointer-events-none absolute -inset-px opacity-0 transition duration-300 group-hover:opacity-100"
         style={{
           opacity,

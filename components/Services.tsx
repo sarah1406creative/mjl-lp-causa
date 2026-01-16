@@ -3,13 +3,13 @@ import { SERVICES } from '../constants';
 
 const Services: React.FC = () => {
   return (
-    <section id="atuacao" className="py-12 sm:py-24 bg-white relative">
+    <section id="servicos" className="py-12 sm:py-24 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-20 reveal">
           <span className="text-mjl-gold font-bold uppercase tracking-[0.2em] text-xs mb-3 block font-heading">Soluções Jurídicas</span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-bold text-mjl-dark mb-6">Como podemos te ajudar?</h2>
           <p className="text-stone-600 text-lg font-light px-4">
-            Atuamos nas principais dores de quem comprou imóvel na planta ou pronto.
+            Atuamos nas principais dores de quem precisa resolver inventários ou questões de família.
           </p>
         </div>
 

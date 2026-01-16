@@ -12,7 +12,7 @@ const About: React.FC = () => {
             <div className="absolute -top-4 -left-4 sm:-top-10 sm:-left-10 w-32 h-32 sm:w-64 sm:h-64 bg-mjl-gold/10 rounded-full blur-2xl sm:blur-3xl group-hover:bg-mjl-gold/20 transition-all duration-700 ease-out-expo"></div>
             <img
               src={IMAGES.OFFICE_PHOTO}
-              alt="Escritório de Advocacia Imobiliária"
+              alt="MJL Advocacia"
               className="relative rounded-sm shadow-2xl w-full object-cover aspect-[4/3] z-10 filter grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 ease-out-expo"
               loading="lazy"
             />
@@ -20,27 +20,27 @@ const About: React.FC = () => {
 
             {/* Stats Box */}
             <div className="absolute -bottom-4 right-0 sm:-bottom-8 sm:-right-8 bg-white p-4 sm:p-8 shadow-xl z-20 max-w-[140px] sm:max-w-[220px] border-t-4 border-mjl-gold hover:-translate-y-1 transition-transform duration-500 ease-out-expo">
-              <p className="font-heading text-2xl sm:text-5xl text-mjl-dark font-bold">Imob</p>
-              <p className="text-[8px] sm:text-xs text-stone-500 uppercase tracking-widest mt-1 sm:mt-2 font-bold">Especialidade Exclusiva</p>
+              <p className="font-heading text-2xl sm:text-5xl text-mjl-dark font-bold">MJL</p>
+              <p className="text-[8px] sm:text-xs text-stone-500 uppercase tracking-widest mt-1 sm:mt-2 font-bold">Advocacia Especializada</p>
             </div>
           </div>
 
           <div className="order-2 lg:order-2 reveal delay-200">
-            <span className="text-mjl-gold font-bold tracking-widest uppercase text-xs mb-2 sm:mb-4 block font-heading">Sobre o Escritório</span>
+            <span className="text-mjl-gold font-bold tracking-widest uppercase text-xs mb-2 sm:mb-4 block font-heading">Especialidade em Sucessões</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-mjl-dark mb-6 sm:mb-8 leading-tight">
-              Defendendo quem sonha com a <br />
-              <span className="text-mjl-gold">Casa Própria</span>.
+              Segurança Jurídica em <br />
+              <span className="text-mjl-gold">Inventários e Família</span>.
             </h2>
             <div className="space-y-4 sm:space-y-6 text-stone-600 leading-relaxed text-base sm:text-lg font-light">
               <p>
-                A <strong className="text-mjl-dark font-semibold">MJL Advocacia</strong> se consolidou como referência em <strong className="text-mjl-dark">Direito Imobiliário</strong> ao combater as práticas abusivas de construtoras e bancos.
+                O escritório <strong className="text-mjl-dark font-semibold">MJL Advocacia</strong> atua com excelência técnica em <strong className="text-mjl-dark">Inventários e Sucessões</strong>, auxiliando famílias na transmissão segura de seus bens.
               </p>
               <p>
-                Sabemos que um imóvel é o maior investimento da vida de uma família. Quando a obra atrasa, quando aparecem defeitos ou quando o contrato se torna impagável, nós entramos para equilibrar o jogo e recuperar o que é seu por direito.
+                Nossa atuação vai além do jurídico: oferecemos suporte em momentos sensíveis, priorizando a celeridade processual e a preservação do patrimônio familiar, seja por via judicial ou extrajudicial (em cartório).
               </p>
               <div className="flex items-center pt-4 text-mjl-dark font-medium">
                 <MapPinIcon className="w-5 h-5 text-mjl-gold mr-3 flex-shrink-0" />
-                <span className="font-heading text-sm font-semibold tracking-wide uppercase">Atendimento Nacional (Digital) e Presencial em POA</span>
+                <span className="font-heading text-sm font-semibold tracking-wide uppercase">Atendimento Digital e Presencial em Porto Alegre</span>
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@ const About: React.FC = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
             <div className="lg:col-span-4">
-              <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-white/10 shadow-2xl group max-w-sm mx-auto lg:max-w-none">
+              <div className="relative aspect-[3/4] rounded-lg overflow-hidden border border-white/10 shadow-2xl group max-w-sm mx-auto lg:max-w-none mt-8">
                 <img
                   src={IMAGES.LAWYER_PHOTO}
                   alt="Germano Mejler"
@@ -73,24 +73,24 @@ const About: React.FC = () => {
             </div>
 
             <div className="lg:col-span-8 text-white/90">
-              <h3 className="text-2xl sm:text-3xl font-heading font-bold mb-6 text-white">Estratégia contra Construtoras</h3>
+              <h3 className="text-2xl sm:text-3xl font-heading font-bold mb-6 text-white">Estratégia e Agilidade</h3>
               <div className="grid md:grid-cols-2 gap-6 sm:gap-10">
                 <div className="space-y-4">
                   <p className="text-stone-300 leading-relaxed text-sm sm:text-base">
-                    Germano Mejler (OAB/RS 78.751) direcionou sua carreira para o Direito Imobiliário após perceber a fragilidade do consumidor diante de grandes incorporadoras.
+                    Germano Mejler (OAB/RS 78.751) coordena uma equipe dedicada a desburocratizar inventários e proteger heranças por meio do planejamento sucessório inteligente.
                   </p>
                   <p className="text-stone-300 leading-relaxed text-sm sm:text-base">
-                    Sua atuação é focada em resultados financeiros: indenizações por atraso, reversão de multas de distrato e reparação de danos construtivos.
+                    Com foco em resultados práticos, sua atuação busca mitigar conflitos familiares e garantir que a sucessão ocorra da maneira mais eficiente possível.
                   </p>
                 </div>
                 <div className="space-y-6 sm:space-y-8">
                   <div className="border-l border-mjl-gold pl-4 sm:pl-6 hover:pl-8 transition-all duration-500 ease-out-expo">
                     <h4 className="text-white font-heading font-bold text-base sm:text-lg mb-2">Expertise</h4>
-                    <p className="text-sm text-stone-400">Distrato, Atraso de Obra e Vícios Construtivos.</p>
+                    <p className="text-sm text-stone-400">Inventários, Testamentos e Holding Familiar.</p>
                   </div>
                   <div className="border-l border-mjl-gold pl-4 sm:pl-6 hover:pl-8 transition-all duration-500 ease-out-expo">
-                    <h4 className="text-white font-heading font-bold text-base sm:text-lg mb-2">Missão</h4>
-                    <p className="text-sm text-stone-400">Garantir que o sonho do imóvel não vire pesadelo.</p>
+                    <h4 className="text-white font-heading font-bold text-base sm:text-lg mb-2">Diferencial</h4>
+                    <p className="text-sm text-stone-400">Soluções completas para a gestão de ativos e herança.</p>
                   </div>
                 </div>
               </div>
